@@ -11,4 +11,7 @@ import Foundation
 class Player{
     var nomePais : String
 
+    init(pais: String) {
+        nomePais = pais
+    }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Pin {
+class Pin{
     var nomeCidade: String
     let nomeImagem: String
     
