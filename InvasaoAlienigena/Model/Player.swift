@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Pin {
+    var nomeCidade: String
+    let nomeImagem: String
+    
+    init(nomeCidade: String) {
+        self.nomeCidade = nomeCidade
+        self.nomeImagem = "mappin.png"
+    }
+}
