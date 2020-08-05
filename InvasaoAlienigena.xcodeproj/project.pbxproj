@@ -8,26 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		DBFF014D24DB3DAB00890ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */; };
-		DBFF014F24DB3DAB00890ADC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DBFF014E24DB3DAB00890ADC /* GameScene.sks */; };
-		DBFF015124DB3DAB00890ADC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DBFF015024DB3DAB00890ADC /* Actions.sks */; };
 		DBFF015324DB3DAB00890ADC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF015224DB3DAB00890ADC /* GameScene.swift */; };
 		DBFF015524DB3DAB00890ADC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF015424DB3DAB00890ADC /* GameViewController.swift */; };
 		DBFF015824DB3DAB00890ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFF015624DB3DAB00890ADC /* Main.storyboard */; };
 		DBFF015A24DB3DAE00890ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFF015924DB3DAE00890ADC /* Assets.xcassets */; };
 		DBFF015D24DB3DAE00890ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFF015B24DB3DAE00890ADC /* LaunchScreen.storyboard */; };
+		DBFF017024DB3E4400890ADC /* ExtensionsGestureActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF016624DB3E4400890ADC /* ExtensionsGestureActions.swift */; };
+		DBFF017124DB3E4400890ADC /* ExtensionsSKAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF016724DB3E4400890ADC /* ExtensionsSKAction.swift */; };
+		DBFF017224DB3E4400890ADC /* HandledGestureSKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF016924DB3E4400890ADC /* HandledGestureSKScene.swift */; };
+		DBFF017324DB3E4400890ADC /* ProtocolsGestureActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF016A24DB3E4400890ADC /* ProtocolsGestureActions.swift */; };
+		DBFF017424DB3E4400890ADC /* SKManageableImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF016C24DB3E4400890ADC /* SKManageableImageNode.swift */; };
+		DBFF017524DB3E4400890ADC /* SKMoulding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF016D24DB3E4400890ADC /* SKMoulding.swift */; };
+		DBFF017624DB3E4400890ADC /* SKMyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF016E24DB3E4400890ADC /* SKMyCircle.swift */; };
+		DBFF017724DB3E4400890ADC /* SKSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF016F24DB3E4400890ADC /* SKSquare.swift */; };
+		DBFF017B24DB3E9F00890ADC /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF017A24DB3E9F00890ADC /* CodableExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBFF014924DB3DAB00890ADC /* InvasaoAlienigena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvasaoAlienigena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBFF014E24DB3DAB00890ADC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DBFF015024DB3DAB00890ADC /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		DBFF015224DB3DAB00890ADC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		DBFF015424DB3DAB00890ADC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DBFF015724DB3DAB00890ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBFF015924DB3DAE00890ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBFF015C24DB3DAE00890ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBFF015E24DB3DAE00890ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFF016624DB3E4400890ADC /* ExtensionsGestureActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsGestureActions.swift; sourceTree = "<group>"; };
+		DBFF016724DB3E4400890ADC /* ExtensionsSKAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsSKAction.swift; sourceTree = "<group>"; };
+		DBFF016924DB3E4400890ADC /* HandledGestureSKScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandledGestureSKScene.swift; sourceTree = "<group>"; };
+		DBFF016A24DB3E4400890ADC /* ProtocolsGestureActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolsGestureActions.swift; sourceTree = "<group>"; };
+		DBFF016C24DB3E4400890ADC /* SKManageableImageNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKManageableImageNode.swift; sourceTree = "<group>"; };
+		DBFF016D24DB3E4400890ADC /* SKMoulding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMoulding.swift; sourceTree = "<group>"; };
+		DBFF016E24DB3E4400890ADC /* SKMyCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMyCircle.swift; sourceTree = "<group>"; };
+		DBFF016F24DB3E4400890ADC /* SKSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKSquare.swift; sourceTree = "<group>"; };
+		DBFF017A24DB3E9F00890ADC /* CodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +75,71 @@
 			isa = PBXGroup;
 			children = (
 				DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */,
-				DBFF014E24DB3DAB00890ADC /* GameScene.sks */,
-				DBFF015024DB3DAB00890ADC /* Actions.sks */,
-				DBFF015224DB3DAB00890ADC /* GameScene.swift */,
-				DBFF015424DB3DAB00890ADC /* GameViewController.swift */,
-				DBFF015624DB3DAB00890ADC /* Main.storyboard */,
+				DBFF017824DB3E4B00890ADC /* Model */,
+				DBFF016424DB3E4400890ADC /* View */,
+				DBFF017924DB3E5600890ADC /* Controller */,
 				DBFF015924DB3DAE00890ADC /* Assets.xcassets */,
-				DBFF015B24DB3DAE00890ADC /* LaunchScreen.storyboard */,
+				DBFF017A24DB3E9F00890ADC /* CodableExtensions.swift */,
 				DBFF015E24DB3DAE00890ADC /* Info.plist */,
 			);
 			path = InvasaoAlienigena;
+			sourceTree = "<group>";
+		};
+		DBFF016424DB3E4400890ADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBFF015624DB3DAB00890ADC /* Main.storyboard */,
+				DBFF015B24DB3DAE00890ADC /* LaunchScreen.storyboard */,
+				DBFF015224DB3DAB00890ADC /* GameScene.swift */,
+				DBFF016524DB3E4400890ADC /* GestureManagement */,
+				DBFF016B24DB3E4400890ADC /* SKElements */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBFF016524DB3E4400890ADC /* GestureManagement */ = {
+			isa = PBXGroup;
+			children = (
+				DBFF016624DB3E4400890ADC /* ExtensionsGestureActions.swift */,
+				DBFF016724DB3E4400890ADC /* ExtensionsSKAction.swift */,
+				DBFF016824DB3E4400890ADC /* Easebling Superclasse */,
+				DBFF016A24DB3E4400890ADC /* ProtocolsGestureActions.swift */,
+			);
+			path = GestureManagement;
+			sourceTree = "<group>";
+		};
+		DBFF016824DB3E4400890ADC /* Easebling Superclasse */ = {
+			isa = PBXGroup;
+			children = (
+				DBFF016924DB3E4400890ADC /* HandledGestureSKScene.swift */,
+			);
+			path = "Easebling Superclasse";
+			sourceTree = "<group>";
+		};
+		DBFF016B24DB3E4400890ADC /* SKElements */ = {
+			isa = PBXGroup;
+			children = (
+				DBFF016C24DB3E4400890ADC /* SKManageableImageNode.swift */,
+				DBFF016D24DB3E4400890ADC /* SKMoulding.swift */,
+				DBFF016E24DB3E4400890ADC /* SKMyCircle.swift */,
+				DBFF016F24DB3E4400890ADC /* SKSquare.swift */,
+			);
+			path = SKElements;
+			sourceTree = "<group>";
+		};
+		DBFF017824DB3E4B00890ADC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBFF017924DB3E5600890ADC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBFF015424DB3DAB00890ADC /* GameViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,10 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFF015824DB3DAB00890ADC /* Main.storyboard in Resources */,
-				DBFF014F24DB3DAB00890ADC /* GameScene.sks in Resources */,
 				DBFF015A24DB3DAE00890ADC /* Assets.xcassets in Resources */,
 				DBFF015D24DB3DAE00890ADC /* LaunchScreen.storyboard in Resources */,
-				DBFF015124DB3DAB00890ADC /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +213,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFF017724DB3E4400890ADC /* SKSquare.swift in Sources */,
 				DBFF015324DB3DAB00890ADC /* GameScene.swift in Sources */,
+				DBFF017624DB3E4400890ADC /* SKMyCircle.swift in Sources */,
+				DBFF017024DB3E4400890ADC /* ExtensionsGestureActions.swift in Sources */,
+				DBFF017424DB3E4400890ADC /* SKManageableImageNode.swift in Sources */,
+				DBFF017124DB3E4400890ADC /* ExtensionsSKAction.swift in Sources */,
 				DBFF015524DB3DAB00890ADC /* GameViewController.swift in Sources */,
+				DBFF017324DB3E4400890ADC /* ProtocolsGestureActions.swift in Sources */,
+				DBFF017B24DB3E9F00890ADC /* CodableExtensions.swift in Sources */,
 				DBFF014D24DB3DAB00890ADC /* AppDelegate.swift in Sources */,
+				DBFF017224DB3E4400890ADC /* HandledGestureSKScene.swift in Sources */,
+				DBFF017524DB3E4400890ADC /* SKMoulding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.julianaprado.InvasaoAlienigena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.julianaprado.InvasaoAlienigena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
