@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E1009DF24DB4ED800B322B4 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1009DE24DB4ED800B322B4 /* Pin.swift */; };
+		2E1009E124DC8EB800B322B4 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E1009E024DC8EB800B322B4 /* cities.json */; };
 		DB716D4924DB46DE005D4600 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB716D4824DB46DE005D4600 /* Player.swift */; };
 		DBFF014D24DB3DAB00890ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */; };
 		DBFF015324DB3DAB00890ADC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF015224DB3DAB00890ADC /* GameScene.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2E1009DE24DB4ED800B322B4 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		2E1009E024DC8EB800B322B4 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		DB716D4824DB46DE005D4600 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		DBFF014924DB3DAB00890ADC /* InvasaoAlienigena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvasaoAlienigena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		DBFF014B24DB3DAB00890ADC /* InvasaoAlienigena */ = {
 			isa = PBXGroup;
 			children = (
+				2E1009E024DC8EB800B322B4 /* cities.json */,
 				DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */,
 				DBFF017824DB3E4B00890ADC /* Model */,
 				DBFF016424DB3E4400890ADC /* View */,
@@ -206,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1009E124DC8EB800B322B4 /* cities.json in Resources */,
 				DBFF015824DB3DAB00890ADC /* Main.storyboard in Resources */,
 				DBFF015A24DB3DAE00890ADC /* Assets.xcassets in Resources */,
 				DBFF015D24DB3DAE00890ADC /* LaunchScreen.storyboard in Resources */,
