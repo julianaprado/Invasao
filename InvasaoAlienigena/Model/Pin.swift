@@ -9,15 +9,18 @@
 import Foundation
 
 class Pin{
-    var nomeCidade: String
+    var country: String
+    var name: String
+    var lat: Double
+    var lng: Double
     let nomeImagem: String
-    var latitude: Double
-    var longitude: Double
     
     init(nomeCidade: String) {
-        self.nomeCidade = nomeCidade
+        self.country = ""
+        self.name = nomeCidade
+        self.lat = 0.0
+        self.lng = 0.0
         self.nomeImagem = "skPin.png"
-        self.latitude = 0.0
-        self.longitude = 0.0
+
     }
 }
