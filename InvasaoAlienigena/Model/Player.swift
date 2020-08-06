@@ -8,12 +8,12 @@
 
 import Foundation
 
-class Pin{
-    var nomeCidade: String
-    let nomeImagem: String
+class Player{
     
-    init(nomeCidade: String) {
-        self.nomeCidade = nomeCidade
-        self.nomeImagem = "mappin.png"
+    var nomePais : String
+    
+    
+    init(pais: String) {
+        nomePais = pais
     }
 }
