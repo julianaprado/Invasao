@@ -7,15 +7,17 @@
 //
 
 import Foundation
+
+
 var dao = DAO()
 
-class DAO{
+class DAO {
     
     var players:[Player] = []
     var playerOne:Player
     
     fileprivate init(){
-        self.playerOne = Player("brasil")
+        self.playerOne = Player(pais: "brasil")
         self.players.append(playerOne)
         
     }

@@ -9,12 +9,22 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import MultipeerConnectivity
 
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let session = MCSession(peer: MCPeerID(displayName: "Mary"))
+        let serviceType = "io-objc-mpc" // Limited to 15 ASCII characters
+        let browser = MCBrowserViewController(serviceType: serviceType, session: session)
+        self.present(browser, animated: true, completion: nil)
     }
 
     override var shouldAutorotate: Bool {
