@@ -21,6 +21,7 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let h = dao
     }
     
     override func viewDidAppear(_ animated: Bool) {

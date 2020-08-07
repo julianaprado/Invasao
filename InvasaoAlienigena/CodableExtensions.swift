@@ -199,6 +199,18 @@ extension Data {
 
 
 extension Decodable {
+   
+    mutating func load(from url:URL) throws {
+
+        // Try to read
+        do {
+            let readedData = try Data(contentsOf: url)
+            try load(from: readedData)
+        } catch {
+            debugPrint("Can not read from", String(describing: url))
+            throw FileManageError.canNotReadFile
+        }
+    }
     
     static private func url(from file:String? = nil)->URL {
         // generates URL for documentDir/file.json
