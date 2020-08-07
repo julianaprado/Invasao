@@ -10,42 +10,49 @@ import Foundation
 
 
 var dao = DAO()
-//let data: Data // received from a network request, for example
-//let json = try? JSONSerialization.jsonObject(with: data, options: [])
 
 class DAO {
     
     var players:[Player] = []
     var playerOne:Player
-    var pins:[Cidade] = []
+    var cidades:[Cidade] = []
+    var italia:[Cidade] = []
+    var brasil:[Cidade] = []
+    var usa:[Cidade] = []
+    var tresCidades:[Cidade] = []
     
     
     fileprivate init?(){
         self.playerOne = Player(pais: "brasil")
         self.players.append(playerOne)
         let localFile = getURL(for: "cities")
-        print(localFile)
-        try? self.pins.load(from: localFile!)
-        
-        print(pins.count)
+        try? self.cidades.load(from: localFile!)
+        prepararVetores()
+    
         
     }
+    
+    
+    func prepararVetores(){
+        for cidade in cidades{
+            if cidade.country == "IT"{
+                italia.append(cidade)
+            } else if cidade.country == "US"{
+                usa.append(cidade)
+            } else if cidade.country == "BR"{
+                brasil.append(cidade)
+            }
+        }
+        
+        tresCidades.append(brasil.randomElement()!)
+        tresCidades.append(usa.randomElement()!)
+        tresCidades.append(italia.randomElement()!)
+            
+        }
+        
     
     func getURL(for name: String) -> URL?{
         return Bundle.main.url(forResource: name, withExtension: "json")
-    }
-    
-    private func readLocalFile(forName name: String) -> Data? {
-        do {
-            if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
-                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
-                return jsonData
-            }
-        } catch {
-            print(error)
-        }
-
-        return nil
     }
     
 }

@@ -8,12 +8,7 @@
 //
 import Foundation
 
-struct Cidade: Codable {
-    let country: String?
-    let name: String?
-    let lat: String?
-    let lng: String?
-}
+
 
 //class Pin {
 //    var nome: String
@@ -29,31 +24,5 @@ struct Cidade: Codable {
 //
 //    }
 //}
-//
-//
-//
-//
-//
-//private func parse(jsonData: Data) {
-//    do {
-//        let decodedData = try JSONDecoder().decode(Cidade.self, from: jsonData)
-//    } catch {
-//        print("decode error")
-//    }
-//}
-//
-//private func loadJson(fromFileNamed: String, completion: @escaping (Result<Data, Error>) -> Void) {
-//    if let url = URL(string: fromFileNamed) {
-//        let urlSession = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
-//            if let error = error {
-//                completion(.failure(error))
-//            }
-//
-//            if let data = data {
-//                completion(.success(data))
-//            }
-//        }
-//
-//        urlSession.resume()
-//    }
+
 //}
