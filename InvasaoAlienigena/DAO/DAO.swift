@@ -15,10 +15,13 @@ class DAO {
     
     var players:[Player] = []
     var playerOne:Player
+    var pins:[Pin] = []
     
     fileprivate init(){
         self.playerOne = Player(pais: "brasil")
         self.players.append(playerOne)
+        
+        
         
     }
 }
