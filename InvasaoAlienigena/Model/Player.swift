@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Player{
+struct Player:Codable{
     
     var nomePais : String
     

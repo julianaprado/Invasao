@@ -19,10 +19,10 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     var messageToSend: String!
     let serviceType = "aliens-iegame"
     let kMCSessionMaximumNumberOfPeers = 3
-
+    let h = dao
     override func viewDidLoad() {
         super.viewDidLoad()
-        let h = dao
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -92,7 +92,7 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-      
+       // let daoItem = JSONDecoder().decode(h.self, from: data)
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
