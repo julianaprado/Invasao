@@ -9,8 +9,17 @@
 import SpriteKit
 import GameplayKit
 
+
+
 class GameScene: SKScene {
     
+    func geraPins(cidades: [Cidade]) -> ([Pin]) {
+        var pins: [Pin] = []
+        for cidade in cidades {
+            pins.append(Pin(cidade: cidade))
+        }
+        return pins
+    }
     
     override func didMove(to view: SKView) {
        
