@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E1009DF24DB4ED800B322B4 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1009DE24DB4ED800B322B4 /* Pin.swift */; };
 		2E1009E124DC8EB800B322B4 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E1009E024DC8EB800B322B4 /* cities.json */; };
+		2E1009E324E1B7D900B322B4 /* Arma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1009E224E1B7D900B322B4 /* Arma.swift */; };
 		DB169B1224DC90DB00B8367B /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB169B1124DC90DB00B8367B /* DAO.swift */; };
 		DB169B1424DDDE9E00B8367B /* Cidade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB169B1324DDDE9E00B8367B /* Cidade.swift */; };
 		DB716D4924DB46DE005D4600 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB716D4824DB46DE005D4600 /* Player.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		2E1009DE24DB4ED800B322B4 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		2E1009E024DC8EB800B322B4 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		2E1009E224E1B7D900B322B4 /* Arma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arma.swift; sourceTree = "<group>"; };
 		DB169B1124DC90DB00B8367B /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		DB169B1324DDDE9E00B8367B /* Cidade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cidade.swift; sourceTree = "<group>"; };
 		DB716D4824DB46DE005D4600 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				DB716D4824DB46DE005D4600 /* Player.swift */,
 				2E1009DE24DB4ED800B322B4 /* Pin.swift */,
 				DB169B1324DDDE9E00B8367B /* Cidade.swift */,
+				2E1009E224E1B7D900B322B4 /* Arma.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				DBFF014D24DB3DAB00890ADC /* AppDelegate.swift in Sources */,
 				DBFF017224DB3E4400890ADC /* HandledGestureSKScene.swift in Sources */,
 				DBFF017524DB3E4400890ADC /* SKMoulding.swift in Sources */,
+				2E1009E324E1B7D900B322B4 /* Arma.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
