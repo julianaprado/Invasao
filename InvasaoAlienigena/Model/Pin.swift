@@ -7,22 +7,22 @@
 ////
 //
 import Foundation
+import UIKit
 
 
+class Pin {
+    var lat: Double
+    var lng: Double
+    var label: UILabel
+    var imagem: UIImage?
 
-//class Pin {
-//    var nome: String
-//    var lat: Double
-//    var lng: Double
-//    let nomeImagem: String
-//
-//    init(cidade: Cidade) {
-////        self.nome = cidade.name
-////        self.lat = Double(cidade.lat)!
-////        self.lng = Double(cidade.lng)!
-////        self.nomeImagem = "skPin.png"
-//
-//    }
-//}
+    init(cidade: Cidade) {
+        self.lat = Double(cidade.lat!)!
+        self.lng = Double(cidade.lng!)!
+        self.label = UILabel(frame: CGRect(origin: CGPoint(x: lat, y: lng), size: CGSize(width: 10, height: 10)))
+        self.label.text = cidade.name
+        self.imagem = UIImage(contentsOfFile: "skPin.png")
 
-//}
+    }
+}
+
