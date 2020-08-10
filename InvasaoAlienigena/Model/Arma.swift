@@ -24,11 +24,17 @@ class SuperArma {
     var pronta:Bool
     
     func armaPronta() {
-        for arma in armas {
+        
+        if (self.armas.count == 0) {
+            return
+        }
+        
+        for arma in self.armas {
             if (arma.carga < 10) {
                 return
             }
         }
+        
         self.pronta = true
         return
     }
