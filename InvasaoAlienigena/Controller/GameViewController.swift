@@ -18,7 +18,8 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     var mcAdvertiserAssistant: MCAdvertiserAssistant!
     var messageToSend: String!
     let serviceType = "aliens-iegame"
-    
+    let kMCSessionMaximumNumberOfPeers = 3
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let h = dao
@@ -27,6 +28,7 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         session = MCSession(peer: peerID)
+        
         session?.delegate = self
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showConnectionPrompt))
 
@@ -45,8 +47,12 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
         present(browser, animated: true, completion: nil)
     }
     
+    @IBAction func connectPeers(_ sender: UIButton) {
+        showConnectionPrompt()
+    }
+    
     @objc func showConnectionPrompt() {
-        let ac = UIAlertController(title: "Connect to others", message: nil, preferredStyle: .alert)
+        let ac = UIAlertController(title: "Bora acabar com aliens", message: nil, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Host a session", style: .default, handler: startHosting))
         ac.addAction(UIAlertAction(title: "Join a session", style: .default, handler: joinSession))
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
