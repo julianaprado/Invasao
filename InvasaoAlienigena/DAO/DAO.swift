@@ -11,7 +11,7 @@ import Foundation
 
 var dao = DAO()
 
-class DAO {
+class DAO :Codable{
     
     var players:[Player] = []
     var playerOne:Player

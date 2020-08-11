@@ -97,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				DB169B1024DC90C800B8367B /* DAO */,
-				2E1009E024DC8EB800B322B4 /* cities.json */,
 				DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */,
 				DBFF017824DB3E4B00890ADC /* Model */,
 				DBFF016424DB3E4400890ADC /* View */,
@@ -154,6 +153,7 @@
 		DBFF017824DB3E4B00890ADC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2E1009E024DC8EB800B322B4 /* cities.json */,
 				DB716D4824DB46DE005D4600 /* Player.swift */,
 				2E1009DE24DB4ED800B322B4 /* Pin.swift */,
 				DB169B1324DDDE9E00B8367B /* Cidade.swift */,

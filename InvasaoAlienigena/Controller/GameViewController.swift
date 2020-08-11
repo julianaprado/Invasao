@@ -35,10 +35,6 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
         jogo.idPlayer1 = peerID
     }
     
-    func send(){
-        
-    }
-    
     func startHosting(action: UIAlertAction) {
         guard let session = session else { return }
         mcAdvertiserAssistant = MCAdvertiserAssistant(serviceType: serviceType, discoveryInfo: nil, session: session)
@@ -98,14 +94,32 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
            }
     }
     
+
+    
+    
+    func sendDao(_ dao: DAO){
+        if session.connectedPeers.count == 3 {
+            if let dao == // datamanager.loadData funcao do cara
+            do {
+                try session.send(dao, toPeers: session.connectedPeers, with: .reliable)
+            } catch{
+                fatalError("Could not send todo item")
+            }
+        }{
+            print("You are not connected to enough devices")
+        }
+    }
+    
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+        
+        //guardar os ids dos peers
         if jogo.idPlayer2 != nil{
             jogo.idPlayer2 = peerID
         } else{
              jogo.idPlayer3 = peerID
         }
         
-        //guardae os ids dos peers
+        
         //testar se os 3 recebem info
             //transformar data em acao (enum)
         
@@ -115,7 +129,15 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
-        
+        do{
+            
+            
+            DispatchQueue.main.async {
+              //no video ele usa uma funcao dele loadData() pra reload tudo pro outro player
+            }
+        }catch{
+            fatalError("Unable to process the recieved data.")
+        }
     }
     
     func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
