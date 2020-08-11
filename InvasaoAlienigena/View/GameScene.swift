@@ -12,7 +12,7 @@ import GameplayKit
 
 
 class GameScene: SKScene {
-    
+
     func geraPins(cidades: [Cidade]) -> ([Pin]) {
         var pins: [Pin] = []
         for cidade in cidades {
@@ -22,10 +22,11 @@ class GameScene: SKScene {
     }
     
     override func didMove(to view: SKView) {
-       
+        backgroundColor = .red
     }
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        geraPins(cidades: dao?.cidades ?? [])
+        
     }
 }

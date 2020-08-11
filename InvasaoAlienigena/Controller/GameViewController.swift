@@ -19,12 +19,20 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     var messageToSend: String!
     let serviceType = "aliens-iegame"
     let kMCSessionMaximumNumberOfPeers = 3
-    let h = dao
     var jogo = Jogo()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
     
+    func showScene(){
+        if let view = self.view as! SKView?{
+            let size = CGSize(width: 800, height: 800)
+            let scene  = GameScene(size: size)
+            scene.scaleMode = .aspectFill
+            view.presentScene(scene)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -39,14 +47,12 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
         guard let session = session else { return }
         mcAdvertiserAssistant = MCAdvertiserAssistant(serviceType: serviceType, discoveryInfo: nil, session: session)
         mcAdvertiserAssistant?.start()
-        
-        
     }
+    
     func joinSession(action: UIAlertAction) {
         guard let session = session else { return }
         let browser = MCBrowserViewController(serviceType: serviceType, session: session)
         browser.delegate = self
-        
         present(browser, animated: true, completion: nil)
     }
     
@@ -82,6 +88,7 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
          switch state {
            case .connected:
                print("Connected: \(peerID.displayName)")
+            
 
            case .connecting:
                print("Connecting: \(peerID.displayName)")
@@ -94,21 +101,21 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
            }
     }
     
-
-    
-    
     func sendDao(_ dao: DAO){
-        if session.connectedPeers.count == 3 {
-            if let dao == // datamanager.loadData funcao do cara
+        if session.connectedPeers.count == 2 {
+            if let dao = dao.jsonData{
             do {
                 try session.send(dao, toPeers: session.connectedPeers, with: .reliable)
             } catch{
                 fatalError("Could not send todo item")
             }
-        }{
+        }else{
             print("You are not connected to enough devices")
         }
     }
+    }
+    
+    
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         
@@ -118,7 +125,16 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
         } else{
              jogo.idPlayer3 = peerID
         }
-        
+        do{
+            let d = try JSONDecoder().decode(DAO.self, from: data)
+           try? d.save(in: "dao")
+                
+                DispatchQueue.main.async {
+                dao = d
+            }
+            }catch{
+                fatalError("Unable to process the recieved data.")
+            }
         
         //testar se os 3 recebem info
             //transformar data em acao (enum)
@@ -129,15 +145,7 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
-        do{
-            
-            
-            DispatchQueue.main.async {
-              //no video ele usa uma funcao dele loadData() pra reload tudo pro outro player
-            }
-        }catch{
-            fatalError("Unable to process the recieved data.")
-        }
+    
     }
     
     func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
@@ -149,7 +157,14 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     }
     
     func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
-         dismiss(animated: true)
+        browserViewController.dismiss(animated: true) {
+            DispatchQueue.main.async {
+                self.showScene()
+             //   self.view.backgroundColor = .blue
+            }
+        }
+
+        
     }
     
     func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
@@ -158,3 +173,4 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     
 
 }
+

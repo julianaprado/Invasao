@@ -11,7 +11,7 @@ import Foundation
 
 var dao = DAO()
 
-class DAO :Codable{
+class DAO:Codable{
     
     var players:[Player] = []
     var playerOne:Player
@@ -30,12 +30,10 @@ class DAO :Codable{
         self.playerOne = Player(pais: "brasil")
         self.players.append(playerOne)
         let localFile = getURL(for: "cities")
-        try? self.cidades.load(from: localFile!)
-        prepararVetores()
-    
-        
+       // try? self.cidades.load(from: localFile!)
+      //  prepararVetores()
+
     }
-    
     
     func prepararVetores(){
         for cidade in cidades{
