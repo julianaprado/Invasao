@@ -20,6 +20,8 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     let serviceType = "aliens-iegame"
     let kMCSessionMaximumNumberOfPeers = 3
     let h = dao
+    var jogo = Jogo()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -28,22 +30,27 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         session = MCSession(peer: peerID)
-        
         session?.delegate = self
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showConnectionPrompt))
-
+        jogo.idPlayer1 = peerID
+    }
+    
+    func send(){
+        
     }
     
     func startHosting(action: UIAlertAction) {
         guard let session = session else { return }
         mcAdvertiserAssistant = MCAdvertiserAssistant(serviceType: serviceType, discoveryInfo: nil, session: session)
         mcAdvertiserAssistant?.start()
+        
+        
     }
-
     func joinSession(action: UIAlertAction) {
         guard let session = session else { return }
         let browser = MCBrowserViewController(serviceType: serviceType, session: session)
         browser.delegate = self
+        
         present(browser, animated: true, completion: nil)
     }
     
@@ -92,7 +99,19 @@ class GameViewController: UIViewController,MCSessionDelegate, MCBrowserViewContr
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-       // let daoItem = JSONDecoder().decode(h.self, from: data)
+        if jogo.idPlayer2 != nil{
+            jogo.idPlayer2 = peerID
+        } else{
+             jogo.idPlayer3 = peerID
+        }
+        
+        //guardae os ids dos peers
+        //testar se os 3 recebem info
+            //transformar data em acao (enum)
+        
+        // decoda aqui
+        //identificar actions
+        
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {

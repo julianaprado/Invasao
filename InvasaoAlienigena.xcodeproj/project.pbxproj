@@ -12,6 +12,7 @@
 		2E1009E324E1B7D900B322B4 /* Arma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1009E224E1B7D900B322B4 /* Arma.swift */; };
 		DB169B1224DC90DB00B8367B /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB169B1124DC90DB00B8367B /* DAO.swift */; };
 		DB169B1424DDDE9E00B8367B /* Cidade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB169B1324DDDE9E00B8367B /* Cidade.swift */; };
+		DB169B1624E1D26F00B8367B /* Jogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB169B1524E1D26F00B8367B /* Jogo.swift */; };
 		DB716D4924DB46DE005D4600 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB716D4824DB46DE005D4600 /* Player.swift */; };
 		DBFF014D24DB3DAB00890ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */; };
 		DBFF015324DB3DAB00890ADC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF015224DB3DAB00890ADC /* GameScene.swift */; };
@@ -36,6 +37,7 @@
 		2E1009E224E1B7D900B322B4 /* Arma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arma.swift; sourceTree = "<group>"; };
 		DB169B1124DC90DB00B8367B /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		DB169B1324DDDE9E00B8367B /* Cidade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cidade.swift; sourceTree = "<group>"; };
+		DB169B1524E1D26F00B8367B /* Jogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jogo.swift; sourceTree = "<group>"; };
 		DB716D4824DB46DE005D4600 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		DBFF014924DB3DAB00890ADC /* InvasaoAlienigena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvasaoAlienigena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFF014C24DB3DAB00890ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				2E1009DE24DB4ED800B322B4 /* Pin.swift */,
 				DB169B1324DDDE9E00B8367B /* Cidade.swift */,
 				2E1009E224E1B7D900B322B4 /* Arma.swift */,
+				DB169B1524E1D26F00B8367B /* Jogo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				DBFF017324DB3E4400890ADC /* ProtocolsGestureActions.swift in Sources */,
 				DBFF017B24DB3E9F00890ADC /* CodableExtensions.swift in Sources */,
 				DBFF014D24DB3DAB00890ADC /* AppDelegate.swift in Sources */,
+				DB169B1624E1D26F00B8367B /* Jogo.swift in Sources */,
 				DBFF017224DB3E4400890ADC /* HandledGestureSKScene.swift in Sources */,
 				DBFF017524DB3E4400890ADC /* SKMoulding.swift in Sources */,
 				2E1009E324E1B7D900B322B4 /* Arma.swift in Sources */,

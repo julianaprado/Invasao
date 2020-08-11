@@ -26,7 +26,6 @@ class DAO {
     var pinsItalia:[Cidade] = []
     var pinsUSA:[Cidade] = []
     
-    
     fileprivate init?(){
         self.playerOne = Player(pais: "brasil")
         self.players.append(playerOne)
@@ -142,8 +141,7 @@ class DAO {
         return
 
     }
-        
-    
+   
     func getURL(for name: String) -> URL?{
         return Bundle.main.url(forResource: name, withExtension: "json")
     }
